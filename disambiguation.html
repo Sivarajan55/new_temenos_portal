@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Developer Portal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/regular.min.js"/-->
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/temenos_dev.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="light-theme">
+    <header>
+    <!-- Navigation menu section-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top justify-content-between">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="mr-3">
+                        <a href="index.html" class="light_logo">
+                            <img src="images/logo_dark.svg" alt="logo" class="site-logo">
+                        </a>
+                        <a href="index.html" class="dark_logo">
+                            <img src="images/logo.svg" alt="logo" class="site-logo">
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="library.html">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="disambiguation.html#explore">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="disambiguation.html#create">Create</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="disambiguation.html#learn">Learn</a>
+                    </li>
+                </ul>
+                
+                <!-- search -->
+                <div class="search">
+                    <button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form"><span class="material-icons-outlined">close</span> </button>
+                    <form class="search__form" action="">
+                        <input class="search__input" name="search" type="search" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+                    </form>
+                    <div class="search__related">
+                        <div class="search__suggestion">
+                            <h3>May We Suggest?</h3>
+                            <p>#drone #funny #catgif #broken #lost #hilarious #good #red #blue #nono #why #yes #yesyes #aliens #green</p>
+                        </div>
+                        <div class="search__suggestion">
+                            <h3>Is It This?</h3>
+                            <p>#good #red #hilarious #blue #nono #why #yes #yesyes #aliens #green #drone #funny #catgif #broken #lost</p>
+                        </div>
+                        <div class="search__suggestion">
+                            <h3>Needle, Where Art Thou?</h3>
+                            <p>#broken #lost #good #red #funny #hilarious #catgif #blue #nono #why #yes #yesyes #aliens #green #drone</p>
+                        </div>
+                    </div>
+                </div><!-- /search -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="nav-options">
+                <ul class="navbar-nav">
+                    <li class="dropdown">
+                        <a class="bookmark " href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="material-icons-outlined">bookmark_border</span>                    
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+                            <div class="dropdown-item">No bookmark yet</div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="switch-mode" id="switch-mode" href="#">
+                            <span class="material-icons-outlined">dark_mode</span>                    
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-search" href="#">
+                            <span id="btn-search" class="material-icons-outlined search-icon">search</span>
+                        </a>                        
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container-fluid">
+        <div class="row quotes-block mt-5">
+            <div class="col-md-3 text-center  align-self-center">
+                <img src="images/developer.jpg" class="img-fluid w-50" alt="develoepr">
+            </div>
+            <div class="col-md-9 align-self-center">
+                <h2 class="fam-quotes"><i>"Creation is an act of rebellion"</i><span class="auth_name float-right">-S.Jobs</span></h2>
+                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container-fluid varient-bg" id="create">
+        <h2>Let's Create</h2>
+        <div class="title-desc">
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+        </div>
+        <div class="row align-item-center">
+            <div class="col-md-6 align-self-center">
+                <h3>Use Cases</h3>
+                <p>The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                <div class="text-center">
+                    <button class="btn btn-tns">Show Me How!</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="images/block_images_2.jpg" class="img-fluid w-100">
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div class="row align-item-center">
+            <div class="col-md-6">
+                <img src="images/block_images_1.jpg" class="img-fluid w-100">
+            </div>
+            <div class="col-md-6 align-self-center">
+                <h3>SDKs and Tools</h3>
+                <p>The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                <div class="text-center">
+                    <button class="btn btn-tns">Give Me the Power!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid varient-bg">
+        <div class="row align-item-center">
+            <div class="col-md-6 align-self-center">
+                <h3>API Docs</h3>
+                <p>The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                <div class="text-center">
+                    <button class="btn btn-tns">To The Docs!</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="images/block_images_3.jpg" class="img-fluid w-100">
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="explore">
+        <h2>Let's Explore</h2>
+        <div class="title-desc">
+            <p>The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 explore_block">
+                <div class="explore_block_inner">
+                    <div class="title-box">
+                        <h5 class="my-0 text-center">Solution Guides</h5>
+                    </div>
+                    <figure>
+                        <img src="images/explore_4.jpg" alt="develoepr" class="img-fluid w-100">
+                    </figure>
+                    <div class="content-box">
+                        <p>The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                        <div class="text-center">
+                            <button class="btn btn-tns ">Guide Library</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 explore_block">
+                <div class="explore_block_inner">
+                    <div class="title-box">
+                        <h5 class=" my-0  text-center">Case Studies</h5>
+                    </div>
+                    <figure>
+                        <img src="images/explore_3.jpg" alt="develoepr" class="img-fluid w-100">
+                    </figure>
+                    <div class="content-box">
+                        <p>The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                        <div class="text-center">
+                            <button class="btn btn-tns ">Case Studies</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-md-4 explore_block">
+                <div class="explore_block_inner">
+                    <div class="title-box">
+                        <h5 class=" my-0 text-center">Whitepapers</h5>
+                    </div>
+                    <figure>
+                        <img src="images/explore_5.jpg" alt="develoepr" class="img-fluid w-100">
+                    </figure>
+                    <div class="content-box">
+                        <p>The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                        <div class="text-center">
+                            <button class="btn btn-tns">Whitepapers</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid varient-bg" id="learn">
+        <h2>Let's Learn</h2>
+        <div class="title-desc">
+            <p>De Finibus Bonorum et Malorum for use in a type specimen book. Lorem ipsum, or lipsum as it is sometimes known, is dummy designs. Passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content-wrappper h-100 d-flex flex-column">
+                    <div class="content-group">
+                        <h3>The Learner's Journey</h3>
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                    </div>
+                    <div class="button-group mt-auto justify-content-between row">
+                        <div class="col-md-4">
+                            <button class="btn btn-tns w-100">TLC Hub</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-tns w-100">Base Camp</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-tns w-100">Events</button>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="images/block_images_3.jpg" class="img-fluid w-100">
+            </div>
+        </div>
+    </section>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <figure>
+                    <img class="img-fluid site-logo" src="images/logo.svg" alt="Temenos" >
+                </figure>
+                <div class="footer-address">
+                    <p>Temenos Headquarters SA<br>
+                    2 Rue de l’Ecole-de-Chimie<br>
+                    CH - 1205 Geneva<br>
+                    Switzerland</p>
+                    <p>Tel: <a href="tel:+ 41 (0) 22 708 1150">+ 41 (0) 22 708 1150</a></p>
+                </div>
+                <button class="btn btn-tns">Contact us</button>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                <div class="col-md-3 footer-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Create</a></li>
+                        <li><a href="#">Learn</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-secondary-menu">
+                    <ul>
+                        <li><a href="#">News Room</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 social">
+                    <h5>Visit us on:</h5>
+                    <ul class="d-flex">
+                        <li><a href="https://www.twitter.com" class="twitter fa fa-twitter"></a></li>
+                        <li><a href="https://www.facebook.com" class="facebook fa fa-facebook"></a></li>
+                        <li><a href="https://www.instagram.com" class="instagram fa fa-instagram"></a></li>
+                        <li><a href="#" class="google-plus fa fa-google-plus"></a></li>
+                        <li><a href="#" class="pinterest fa fa-pinterest"></a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bar mt-5">
+            <div class="footer_bar-inner d-sm-flex d-block text-center text-sm-left">
+                <div class="footer_bar-legal">
+                    <span class="site-footer__bar-legal">
+                    Copyright © 2012-2021 Temenos Headquarters SA</span>
+                </div>
+                <ul class="footer_bar-menu d-flex mb-0">
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Supplier Information</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+   
+</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/temenos_dev.js"></script>
+</html>
